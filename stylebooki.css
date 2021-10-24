@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&display=swap');
+
+body
+{
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+
+}
+
+#main_body
+{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1
+{
+    font-size: 20px;
+}
+
+p, a 
+{
+    font-size: 15px;
+    color: black;
+}
+
+h2
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+/*style header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#logo
+{
+    
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+#logo img
+{
+    max-width: 100%;
+    height: auto;
+    width: 90px;
+    padding-top: 22px;
+}
+
+header nav
+{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#a_navigation
+{
+    border-top: 2px solid #0065FC ;
+    color: #0065FC; 
+}
+
+/*style recherche*/
+
+#recherche
+{
+    display: flex;
+    flex-direction: column;    
+}
+
+#recherche_intro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#recherche_intro h1
+{
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+}
+
+#recherche_intro p
+{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/*style formulaire*/
+
+#recherche form
+{
+    display: flex;
+    height: 50px;
+    margin: 20px auto 20px 0px;
+}
+
+.formulaire
+{
+    display: flex;  
+}
+
+.formulaire label
+{
+    background-color: #F2F2F2;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px 0px 0px 13px;
+}
+
+#champs
+{
+    
+    display: flex;
+    width: 210px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+#bouton
+{
+    display: flex;
+    justify-content: center;
+    width: 120px; 
+}
+
+
+.formulaire input[type="search"] 
+{
+    border: none;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    max-width: 100%;
+}
+
+.formulaire input[type="submit"]
+{
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0px 13px 13px 0px;
+    color: white;
+}
+
+
+
+
+/*style barre de filtres*/
+
+
+#filtre
+{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    font-weight: bold;
+    font-size: 17px;   
+}
+
+#filtre h2
+{
+    margin-left: 8px;
+}
+
+#filtre ul
+{
+    display: flex;
+    align-items: center;
+    width: 920px;
+    height: 80px;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+#filtre li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lien_filtre
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #Dcdcdc;
+    height: 46px;
+    border-left: none;
+    border-radius: 50px;
+    padding-right: 15px;
+}
+
+.lien_filtre:hover
+{
+    border: 3px solid #0065FC;
+    border-left: none;
+    color: white;
+    background-color: #0065FC;
+}
+
+
+.filtres_icones
+{
+    margin-right: 20px;
+    padding: 15px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #DEEBFF;
+    
+}
+.lien_filtre:hover .filtres_icones
+{
+    background-color: #0065FC;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info
+{
+    color: #0065FC;
+}
+
+.lien_filtre:hover .fa-money-bill-wave,.lien_filtre:hover .fa-child,.lien_filtre:hover .fa-heart,.lien_filtre:hover .fa-dog
+{
+    color: white;
+}
+
+
+/*style infos*/
+
+#infos
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+.fa-info
+{
+    margin-left: 0px;
+    margin-right: 15px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border: 1px solid #DEEBFF;
+    border-radius: 50px;
+}
+
+/*styles Main*/
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+    /*width: 100%;*/
+    /*height: 625px;*/
+    margin-top: 25px;
+    
+}
+
+.partie
+{
+    background-color: #F2F2F2;
+    /*padding: 25px 20px 20px 35px;*/
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+article
+{
+    flex: 2;
+    max-width: 66%;
+    margin-right: 35px;
+    
+}
+
+.hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vignettes
+{
+    background-color: white;
+    width: 240px;
+    height: 200px;
+    margin: 8px 10px 30px 0px;
+    border-radius: 20px;
+    box-shadow: -3px 2px 6px #Dcdcdc;
+}
+
+.vignettes_image
+{   
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    overflow: hidden;
+    margin: 5px 5px 0px 5px;
+    border-radius: 20px 20px 0px 0px;
+}
+.vignettes img
+{
+    max-width: 250px;
+    height: auto;
+}
+
+.vignettes_infos
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 5px 20px;
+    border-radius: 0 0 20px 20px;
+    height: 80px;
+}
+
+.vignettes h2
+{
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.vignettes p
+{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 8px;   
+}
+
+.etoiles
+{
+    margin-top: 0px;
+    display: flex;
+}
+
+.fa-star
+{
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.gris
+{
+    color: #Dcdcdc;
+}
+
+.affichage
+{
+    margin-top: 0px;
+}
+
+/*style aside*/
+
+aside
+{
+    flex: 1;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aside_titre
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.fa-chart-line
+{
+    font-size: 25px;
+}
+
+#populaires
+{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+aside .vignettes_conteneur
+{
+    display: flex;
+}
+
+aside .vignettes
+{
+    width: 100%;
+    height: 145px;
+
+}
+
+aside .vignettes_image
+{
+    border-radius: 20px 0 0 20px;
+    width: 150px;
+    height: 136px;
+}
+
+aside img
+{
+    max-width: 500px;
+    height: auto;
+}
