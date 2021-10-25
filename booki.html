@@ -15,7 +15,7 @@
                 <nav>
                     <ul>
                         <li class="nav_liens nav_actif"><a href="#" class="a_navigation" >Hébergements</a></li>
-                        <li class="nav_liens"><a href="#" >Activités</a></li>
+                        <li class="nav_liens nav_inactif"><a href="#" >Activités</a></li>
                     </ul>                                                
                 </nav>            
             </header>
@@ -25,12 +25,10 @@
                     <h1>Trouvez votre hébergement pour des vacances de reve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <form method="post" action="formulaire.php">
-                    <div class="formulaire">
-                        <label for="recherche"><i class="fas fa-map-marker-alt"></i></label>
-                        <div id="champs"><input  type="search" name="recherche" id="recherche" placeholder="Marseille, France"/></div>
-                        <div id="bouton"><input type="submit" value="Rechercher"/></div>
-                    </div>
+                <form method="post" action="formulaire.php" class="formulaire">                    
+                    <label for="recherche"><i class="fas fa-map-marker-alt"></i></label>
+                    <div id="champs"><input  type="search" name="recherche" id="recherche" placeholder="Marseille, France"/></div>
+                    <button id="bouton">Rechercher</button>                    
                 </form>
                 <div id="filtre">
                     <h3>Filtres</h3>
@@ -189,7 +187,7 @@
                             </a>
                         </div>
                     </div>
-                    <h2 class="affichage">Afficher plus</h2>
+                    <a href="#"><p class="affichage"><strong>Afficher plus</strong></p></a>
                 </article>
                 <aside class="partie">
                     <div id="aside_titre">
@@ -204,9 +202,9 @@
                                         <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="un interieur d'habitation"/>                                   
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h3>Hotel Tout bleu et tout blanc</h3>
-                                        <p>Nuit à partir de <strong>68€</strong></p>
-                                        <div class="etoiles">
+                                        <h3 class="haut">Hotel Tout bleu et tout blanc</h3>
+                                        <p class="haut">Nuit à partir de <strong>68€</strong></p>
+                                        <div class="etoiles bas">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -224,9 +222,9 @@
                                         <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="un interieur d'habitation"/>                                    
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h3>Hotel Le soleil du matin</h3>
-                                        <p>Nuit à partir de <strong>128€</strong></p>
-                                        <div class="etoiles">
+                                        <h3 class="haut">Hotel Le soleil du matin</h3>
+                                        <p class="haut">Nuit à partir de <strong>128€</strong></p>
+                                        <div class="etoiles bas">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -244,9 +242,9 @@
                                         <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="un interieur d'habitation"/>                                    
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h3>Au coeur de l'eau chambres d'hotes</h3>
-                                        <p>Nuit à partir de <strong>71€</strong></p>
-                                        <div class="etoiles">
+                                        <h3 class="haut">Au coeur de l'eau chambres d'hotes</h3>
+                                        <p class="haut">Nuit à partir de <strong>71€</strong></p>
+                                        <div class="etoiles bas">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
