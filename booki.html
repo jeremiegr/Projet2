@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Booki</title>
+    <title>Hébergements sur</title>
     <script src="https://kit.fontawesome.com/dc6fd1c2b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylebooki.css"/>
     
 </head>
 <body>
-    <div id="main_body">
+        <div id="main_body">
             <header>
                 <div id="logo"><img src="images/logo/Booki@3x.png" alt="logo de Booki" ></div>
                 <nav>
-                    <a href="#" id="a_navigation">Hébergements</a>
-                    <a href="#">Activités</a>        
+                    <ul>
+                        <li class="nav_liens nav_actif"><a href="#" class="a_navigation" >Hébergements</a></li>
+                        <li class="nav_liens"><a href="#" >Activités</a></li>
+                    </ul>                                                
                 </nav>            
             </header>
 
@@ -31,33 +33,33 @@
                     </div>
                 </form>
                 <div id="filtre">
-                    <h2>Filtres</h2>
-                    <ul>
-                        <li>
+                    <h3>Filtres</h3>
+                    <div id="filtres_liste">
+                        <div class="listes">
                             <a href="#" class="lien_filtre">
                                 <div class="filtres_icones"><i class="fas fa-money-bill-wave"></i></div>
                                 <div class="filtres_texte">Economique</div>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="listes">
                             <a href="#" class="lien_filtre">
                                 <div class="filtres_icones"><i class="fas fa-child"></i></div>
                                 <div class="filtres_texte">Familial</div>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="listes">
                             <a href="#" class="lien_filtre">
                                 <div class="filtres_icones"><i class="fas fa-heart"></i></div>
                                 <div class="filtres_texte">Romantique</div>
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="listes">
                             <a href="#" class="lien_filtre">
                                 <div class="filtres_icones"><i class="fas fa-dog"></i></div>
                                 <div class="filtres_texte">Animaux autorisés</div>
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 <div id="infos"><i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
                 
@@ -65,7 +67,7 @@
 
             <main>
                 <article class="partie">
-                    <h1 class="sous_titre">Hébergements à Marseille</h1>
+                    <h2 class="sous_titre">Hébergements à Marseille</h2>
                     <div class="hebergements">
                         <div class="vignettes">
                             <a href="#">
@@ -74,7 +76,7 @@
                                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="un interieur d'habitation"/>                                    
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Auberge la canebière</h2>
+                                        <h3>Auberge la canebière</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -94,7 +96,7 @@
                                         <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="un interieur d'habitation"/>                                    
                                     </div>
                                 <div class="vignettes_infos">
-                                    <h2>Hotel du port</h2>
+                                    <h3>Hotel du port</h3>
                                     <p>Nuit à partir de <strong>25€</strong></p>
                                     <div class="etoiles">
                                         <i class="fas fa-star"></i>
@@ -113,7 +115,7 @@
                                         <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="un interieur d'habitation"/>                                   
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Hotel les mouettes</h2>
+                                        <h3>Hotel les mouettes</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -133,7 +135,7 @@
                                         <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="un interieur d'habitation"/>
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Hotel de la mer</h2>
+                                        <h3>Hotel de la mer</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -153,7 +155,7 @@
                                         <img src="images/hebergements//4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="un interieur d'habitation"/>
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Auberge le panier</h2>
+                                        <h3>Auberge le panier</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -173,7 +175,7 @@
                                         <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="un interieur d'habitation"/>                                    
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Hotel chez Amina</h2>
+                                        <h3>Hotel chez Amina</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -191,7 +193,7 @@
                 </article>
                 <aside class="partie">
                     <div id="aside_titre">
-                        <h1 class="sous_titre">Les plus populaires</h1>
+                        <h2 class="sous_titre">Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div id="populaires">
@@ -202,7 +204,7 @@
                                         <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="un interieur d'habitation"/>                                   
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Hotel Tout bleu et tout blanc</h2>
+                                        <h3>Hotel Tout bleu et tout blanc</h3>
                                         <p>Nuit à partir de <strong>68€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -222,7 +224,7 @@
                                         <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="un interieur d'habitation"/>                                    
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Hotel Le soleil du matin</h2>
+                                        <h3>Hotel Le soleil du matin</h3>
                                         <p>Nuit à partir de <strong>128€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -242,7 +244,7 @@
                                         <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="un interieur d'habitation"/>                                    
                                     </div>
                                     <div class="vignettes_infos">
-                                        <h2>Au coeur de l'eau chambres d'hotes</h2>
+                                        <h3>Au coeur de l'eau chambres d'hotes</h3>
                                         <p>Nuit à partir de <strong>71€</strong></p>
                                         <div class="etoiles">
                                             <i class="fas fa-star"></i>
@@ -257,50 +259,51 @@
                         </div>
                     </div>
                 </aside>
+            
+
+                <section>
+
+                </section>
             </main>
-
-            <section>
-
-            </section>
 
             <footer>
                 <div class="footer_section">
-                    <h2>A propos</h1>
+                    <h2>A propos</h2>
                     <ul>
                         <li>
-                            <a href="">Fonctionnement du site</a>
+                            <a href="#">Fonctionnement du site</a>
                         </li>
                         <li>
-                            <a href="">Conditions generales de vente</a>
+                            <a href="#">Conditions generales de vente</a>
                         </li>
                         <li>
-                            <a href="">Données et confidentialité</a>
+                            <a href="#">Données et confidentialité</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer_section">
-                    <h2>Nos hebergements</h1>
+                    <h2>Nos hebergements</h2>
                     <ul>
                         <li>
-                            <a href="">Charte qualité</a>
+                            <a href="#">Charte qualité</a>
                         </li>
                         <li>
-                            <a href="">Soumettre votre Hotel</a>
+                            <a href="#">Soumettre votre Hotel</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer_section">
-                    <h2>Assistance</h1>
+                    <h2>Assistance</h2>
                     <ul>
                         <li>
-                            <a href="">Centre d'aide</a>
+                            <a href="#">Centre d'aide</a>
                         </li>
                         <li>
-                            <a href="">Nous contacter</a>
+                            <a href="#">Nous contacter</a>
                         </li>
                     </ul>
                 </div>
             </footer>
-    </div>    
+        </div>    
 </body>
 </html>

@@ -8,9 +8,9 @@ body
 
 #main_body
 {
-    width: 75%;
+    max-width: 1300px;
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 a
@@ -18,7 +18,7 @@ a
     text-decoration: none;
 }
 
-h1
+h1, h2
 {
     font-size: 20px;
 }
@@ -29,7 +29,8 @@ p, a
     color: black;
 }
 
-h2
+
+h3
 {
     font-size: 18px;
     font-weight: bold;
@@ -70,16 +71,33 @@ header
 header nav
 {
     width: 35%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
+    
+    /* position: relative; */
+    /* padding-top: 20px; */
 }
 
-#a_navigation
+header ul
+{
+    display: flex;
+    justify-content: space-around;
+     align-items: center; 
+}
+
+.a_navigation
+{
+    
+    color: #0065FC; 
+}
+
+.nav_actif
 {
     border-top: 2px solid #0065FC ;
-    color: #0065FC; 
+}
+
+.nav_liens
+{
+    padding-top: 30px;
+    /* margin-top: 0px; */
 }
 
 /*style recherche*/
@@ -188,12 +206,12 @@ header nav
     font-size: 17px;   
 }
 
-#filtre h2
+#filtre h3
 {
     margin-left: 8px;
 }
 
-#filtre ul
+#filtres_liste
 {
     display: flex;
     align-items: center;
@@ -203,18 +221,11 @@ header nav
     padding-left: 20px;
 }
 
-#filtre li
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .lien_filtre
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     display: flex; 
+     justify-content: space-between; 
+    align-items: center; 
     border: 3px solid #Dcdcdc;
     height: 46px;
     border-left: none;
@@ -290,11 +301,14 @@ main
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     /*width: 100%;*/
     /*height: 625px;*/
     margin-top: 25px;
     
 }
+
+/* style article */
 
 .partie
 {
@@ -309,7 +323,7 @@ main
 article
 {
     flex: 2;
-    max-width: 66%;
+    width: 66%;
     margin-right: 35px;
     
 }
@@ -356,9 +370,9 @@ article
     height: 80px;
 }
 
-.vignettes h2
+.vignettes h3
 {
-    font-size: 16px;
+    font-size: 16px; 
     margin-top: 2px;
     margin-bottom: 4px;
 }
@@ -397,7 +411,7 @@ article
 aside
 {
     flex: 1;
-    max-width: 32%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
