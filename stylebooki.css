@@ -8,10 +8,9 @@ body
 
 #main_body
 {
-    max-width: 1300px;
+    max-width: 1360px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 20px; */
 }
 
 a
@@ -50,6 +49,8 @@ header
     justify-content: space-between;
     height: 100px;
     margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 #logo
@@ -72,9 +73,6 @@ header
 header nav
 {
     width: 35%;
-    
-    /* position: relative; */
-    /* padding-top: 20px; */
 }
 
 header ul
@@ -103,7 +101,6 @@ header ul
 .nav_liens
 {
     padding-top: 30px;
-    /* margin-top: 0px; */
 }
 
 /*style recherche*/
@@ -111,7 +108,9 @@ header ul
 #recherche
 {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 30px;    
 }
 
 #recherche_intro
@@ -141,55 +140,57 @@ header ul
 
 .formulaire
 {
-    display: flex;  
     height: 50px;
-    margin: 20px auto 20px 0px;
+    display: flex; 
+    margin: 20px auto 20px 0px;  
 }
 
 .formulaire label
 {
-    background-color: #F2F2F2;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 13px 0px 0px 13px;
+    background-color: #F2F2F2; 
+    width: 50px;  
+    display: flex; 
+    justify-content: center;  
+    align-items: center;   
+    border-radius: 13px 0px 0px 13px; 
 }
 
 #champs
 {
     
     display: flex;
-    width: 210px;
-    border-top: 1px solid #F2F2F2;
+    width: 260px;
+    border-top: 1px solid #F2F2F2; 
     border-bottom: 1px solid #F2F2F2;
+    height: 50px;
+    margin: 0; 
 }
-
-#bouton
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px; 
-    font-weight: bold;
-    font-size: 17px;
-    /* width: 100%; */
-    border: none;
-    background-color: #0065FC;
-    border-radius: 0px 13px 13px 0px;
-    color: white;
-}
-
 
 .formulaire input[type="search"] 
 {
     border: none;
-    padding-left: 10px;
+    background: none; 
+    padding-left: 20px;  
+    margin: 0px;
     font-weight: bold;
-    font-size: 17px;
-    width: 100%; 
+    font-size: 17px; 
 }
 
+#bouton
+{
+    width: 120px; 
+    font-weight: bold;
+    font-size: 17px;
+    border: none; 
+    background-color: #0065FC;
+    border-radius: 0px 13px 13px 0px; 
+    color: white;   
+}
+
+.formulaire input:focus
+{
+    outline: none;
+}
 
 /*style barre de filtres*/
 
@@ -223,7 +224,7 @@ header ul
      display: flex; 
      justify-content: space-between; 
     align-items: center; 
-    border: 3px solid #Dcdcdc;
+    border: 2px solid #Dcdcdc;
     height: 46px;
     border-left: none;
     border-radius: 50px;
@@ -232,7 +233,7 @@ header ul
 
 .lien_filtre:hover
 {
-    border: 3px solid #0065FC;
+    border: 2px solid #0065FC;
     border-left: none;
     color: white;
     background-color: #0065FC;
@@ -243,8 +244,8 @@ header ul
 {
     margin-right: 20px;
     padding: 15px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,12 +298,17 @@ header ul
 main
 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    /*width: 100%;*/
-    /*height: 625px;*/
     margin-top: 25px;
+    margin-right: 30px;
+    margin-left: 30px;
     
+}
+
+#section_principale
+{
+    display: flex; 
 }
 
 /* style article */
@@ -310,7 +316,6 @@ main
 .partie
 {
     background-color: #F2F2F2;
-    /*padding: 25px 20px 20px 35px;*/
     border-radius: 20px;
     padding: 27px;
     display: flex;
@@ -325,7 +330,6 @@ main
 article
 {
     flex: 2.15; 
-    /* width: 80%; */
     margin-right: 35px;
     
 }
@@ -334,7 +338,6 @@ article
 {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     flex-wrap: wrap;
 }
 
@@ -343,28 +346,27 @@ article
     background-color: white;
     width: 255px; 
     height: 200px; 
-    /* margin: 8px 10px 30px 0px; */
     margin-bottom: 30px;
     border-radius: 20px;
     box-shadow: -3px 2px 6px #Dcdcdc;
+}
+
+.vignettes:hover
+{
+    box-shadow: -3px 2px 20px #Dcdcdc;
 }
 
 .vignettes_conteneur
 {
     display: flex;
     flex-direction: column;
-    /* background-color: crimson; */
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    /* width: 240px; */
-    /* height: 200px; */
 }
 
 .vignettes_image
 {   
-    /* display: flex; */
-    /* justify-content: center; */
     height: 110px;
     overflow: hidden; 
     margin: 5px 5px 0px 5px;
@@ -378,43 +380,26 @@ article
 
 .vignettes_infos
 {
-    /* display: flex; */
-    /* flex-direction: column; */
     padding: 2px 2px 2px 17px;
     height: 85px;
-    /* display: flex;  */
-    /* flex-direction: column; */
-    /* justify-content: space-around;  */
-     /* justify-content: first baseline; */
     border-radius: 0 0 20px 20px;
-    /* height: 100%; */
-    /* background-color: brown;  */
-    /* height: 80px; */
 }
 
 .vignettes h3
 {
     font-size: 16px; 
-    /* background-color: beige;  */
     margin: 6px 0 0 0; 
-    /* margin-top: 2px; */
-    /* margin-bottom: 4px; */
 }
 
 .vignettes p
 {
     font-size: 14px;
-    /* background-color: blue; */
     margin: 7px 0 0 0;  
-    /* margin-top: 0px; */
-    /* margin-bottom: 8px;    */
 }
 
 .etoiles
 {
-    /* margin-top: 0px; */
     display: flex; 
-    /* background-color: blueviolet; */
     margin: 8px 0 0 0;  
 }
 
@@ -440,7 +425,6 @@ article
 aside
 {
     flex: 0.85; 
-    /* width: 30%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,8 +445,6 @@ aside
 
 #populaires
 {
-    /* width: 90%; */
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -479,7 +461,6 @@ aside .vignettes
 aside .vignettes_conteneur
 {
     flex-direction: row;
-    /* background-color: crimson; */
 }
 
 aside .vignettes_image
@@ -487,28 +468,16 @@ aside .vignettes_image
     border-radius: 20px 0 0 20px; 
     width: 230px;
     height: 135px;
-    /* height: 136px; */
 }
 
 aside .vignettes_infos
 {
-    /* display: flex; */
-    /* flex-direction: column; */
     padding: 15px 35px 15px 15px;
     width: 100%;
     height: 115px;
-    /* background-color: cyan; */
-    /* height: 85px; */
-    /* display: flex;  */
-    /* flex-direction: column; */
-    /* justify-content: space-around;  */
-     /* justify-content: first baseline; */
     border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
-    /* height: 100%; */
-    /* background-color: brown;  */
-    /* height: 80px; */
 }
 
 .bas
@@ -516,23 +485,119 @@ aside .vignettes_infos
     margin-top: auto;
 }
 
-aside img
+/* style activités */
+
+#section_activites img
 {
-    /* max-width: 500px; */
-    /* height: auto; */
+    max-width: 700px; 
+    height: auto; 
 }
 
+#section_activites h3
+{
+    font-size: 16px;
+}
+
+#section_activites
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#activites
+{
+    display: flex;
+}
+
+.vignette_decoupage
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.petites, .milieu
+{
+    margin-left: auto;
+}
+
+.bas
+{
+    margin-top: auto;
+}
+
+.vignettes_activites
+{   
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px #Dcdcdc;
+}
+
+.vignettes_activites:hover
+{
+    box-shadow: 0px 2px 20px #Dcdcdc;
+}
+
+.vignettes_activites a
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.activites_images
+{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 0;
+}
+
+.grande .activites_images
+{
+    height: 390px;
+}
+
+.pomegues
+{
+    height: 190px;
+}
+
+.frioul
+{
+    height: 100px;
+}
+
+.garde, .longchamps
+{
+    height: 145px;
+}
+
+.activites_titres
+{
+    
+    display: flex;
+    align-items: center; 
+    height: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 10px;
+    border-radius: 0 0 20px 20px;
+}
 
 /* style footer */
 
 footer
 {
-    height: 240px;
+    height: 200px;
     background-color: #F2F2F2;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    margin-top: 20px;
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-top: 17px;
 }
 
 footer h2
@@ -545,7 +610,6 @@ footer h2
     margin-right: 220px;
     padding-top: 30px;
     height: 100%;
-    /* background-color: cyan; */
 }
 
 .footer_section ul
@@ -554,7 +618,6 @@ footer h2
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    /* background-color: darkblue; */
 }
 
 .footer_section li
