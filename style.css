@@ -3,11 +3,12 @@
 body
 {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 #main_body
 {
-    max-width: 1380px;
+    max-width: 1460px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -52,29 +53,11 @@ header
     margin-left: 20px;
 }
 
-@media (max-width:768px)
-{
-    header
-    {
-        flex-direction: column;
-        margin: inherit;
-    }
-}
-
 #logo
 {   
     max-width: 100%;
     display: flex;
     align-items: center;
-}
-
-@media (max-width:768px)
-{
-    #logo
-    {
-        justify-content: center;
-        padding-bottom: 0;
-    }
 }
 
 #logo img
@@ -85,33 +68,9 @@ header
     padding-top: 22px;
 }
 
-@media (max-width:768px)
-{
-    #logo img 
-    {
-        width: 110px;
-    }
-}
-
 header nav
 {
-    width: 35%;
-}
-
-@media (max-width:992px)
-{
-    header nav
-    {
-        width: 50%; 
-    }
-}
-
-@media (max-width:768px)
-{
-    header nav
-    {
-        width: inherit;
-    }
+    width: 30%;
 }
 
 header ul
@@ -119,15 +78,6 @@ header ul
     display: flex;
     justify-content: space-around;
      align-items: center; 
-}
-
-@media (max-width:768px)
-{
-    header ul
-    {
-        justify-content: inherit;
-        padding: 0px 0px 20px 0px;
-    }
 }
 
 .a_navigation
@@ -140,46 +90,17 @@ header ul
     border-top: 2px solid #0065FC ;
 }
 
-@media (max-width:768px)
-{
-    .nav_actif
-    {
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
-    }   
-}
-
 .nav_inactif:hover
 {
     text-decoration: underline;
 }
 
-@media (max-width:768px)
-{
-    .nav_inactif
-    {
-        border-bottom: 2px solid #Dcdcdc;
-    }   
-}
-
 .nav_liens
 {
     padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
-@media (max-width:768px)
-{
-    .nav_liens
-    {
-        padding-top: inherit;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 12px;
-        margin-top: 10px;
-    }   
-}
-
 
 
 /*style recherche*/
@@ -216,7 +137,6 @@ header ul
 
 
 
-
 /*style formulaire*/
 
 
@@ -226,24 +146,6 @@ header ul
     height: 50px;
     display: flex; 
     margin: 20px auto 20px 0px;  
-}
-
-@media (max-width:992px) 
-{
-    .formulaire
-    {
-        margin-bottom: 8px;
-    }    
-}
-
-@media (max-width:768px)
-{
-    .formulaire
-    {
-        margin-bottom: inherit;
-        height: 50px;
-        justify-content: ;
-    }
 }
 
 .formulaire label
@@ -267,8 +169,6 @@ header ul
     margin: 0; 
 }
 
-
-
 .formulaire input[type="search"] 
 {
     border: none;
@@ -290,31 +190,11 @@ header ul
     color: white;   
 }
 
-@media (max-width:768px)
-{
-    #bouton
-    {
-        width: 60px;
-        border-radius: 15px;
-    }
-}
+
 
 .fa-search
 {
     display: none;
-}
-
-@media (max-width:768px)
-{
-    .fa-search
-    {
-        display: inherit;
-    }
-
-    #rechercher
-    {
-        display: none;
-    }
 }
 
 .formulaire input:focus
@@ -334,14 +214,6 @@ header ul
     font-size: 17px;   
 }
 
-@media (max-width:992px)
-{
-    #filtre
-    {
-        flex-direction: column;
-        align-items: inherit; 
-    }   
-}
 
 #filtre h3
 {
@@ -357,29 +229,6 @@ header ul
     padding-left: 20px;
 }
 
-@media (max-width:992px)
-{
-    #filtres_liste
-    {
-        padding-left: inherit;
-        justify-content: space-between; 
-        width: 100%;
-    }
-}
-
-@media (max-width:768px)
-{
-    #filtres_liste
-    {
-        flex-wrap: wrap;
-    }
-    
-    .listes
-    {
-        margin-bottom: 15px;
-        margin-right: 10px;
-    }
-}
 
 .lien_filtre
 {
@@ -437,23 +286,34 @@ header ul
 #infos
 {
     display: flex;
-    align-items: center;
-    margin-top: 5px;   
+    /* align-items: center;   */
+    margin-top: 20px;
+    /* width: 20px;    */
 }
+
 
 .fa-info
 {
-    margin-left: 0px;
-    margin-right: 15px;
+    
+    /* margin-right: 20px; */
     font-size: 13px;
+    margin-left: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    padding: 3px;
+    align-items: center; 
+    width: 23px;
+    height: 23px;
     border: 1px solid #DEEBFF;
-    border-radius: 50px;
+    border-radius: 20px; 
+    flex-shrink: 0; 
+    /* padding: 4px;  */
+    
+    /* border-radius: 10px; */
+}
+
+#infos p
+{
+    margin: 0 0 0 15px;
 }
 
 
@@ -479,41 +339,16 @@ main
     width: 100%;  
 }
 
-@media (max-width:768px)
-{
-    #section_principale
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
 
 /* style article */
-
-
 
 .partie
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-}
-
-@media (max-width:768px)
-{
-    .partie:nth-child(2)
-    {
-        border-radius: 0; 
-    }
-
-    .partie:nth-child(1)
-    {
-        background: inherit;
-    }
 }
 
 .sous_titre
@@ -523,25 +358,9 @@ main
 
 article
 {
-    width: 59%;
+    width: 62%;
 }
 
-@media (max-width:992px)
-{
-    article
-    {
-        width: 51%;
-    } 
-}
-
-@media (max-width:768px)
-{
-    article
-    {
-        width: inherit;
-        order: 2; 
-    }
-}
 
 .hebergements
 {
@@ -550,15 +369,6 @@ article
     flex-wrap: wrap;  
 }
 
-@media (max-width:768px)
-{
-    .hebergements
-    {
-        flex-wrap: inherit;
-        flex-direction: column;
-        justify-content: inherit;
-    }
-}
 
 .vignettes
 {
@@ -570,27 +380,12 @@ article
 
 article .vignettes
 {
-    width: 32%; 
+    width: 32.5%; 
     height: 210px;
     display: flex;
     flex-direction: column;
 }
 
-@media (max-width:992px)
-{
-    article .vignettes
-    {
-        width: 47%;
-    }
-}
-
-@media (max-width:768px)
-{
-    article .vignettes
-    {
-        width: 100%; 
-    }
-}
 
 .vignettes:hover
 {
@@ -599,12 +394,16 @@ article .vignettes
 
 article .vignettes a
 {
-    border-radius: 20px
+    border-radius: 20px;
+    height: 100%;
+    
 }
 
 .vignettes_image
 {     
-    overflow: hidden;     
+    overflow: hidden;
+    /* width: 100%;
+    height: 100%;      */
 }
 
 article .vignettes_image
@@ -614,26 +413,24 @@ article .vignettes_image
     border-radius: 20px 20px 0px 0px;
 }
 
-.vignettes img
+img
 {
-    max-width: 400px;
-    height: auto; 
+    /* max-width: 400px; */
+    /* height: auto; */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    /* display: block;
+    margin: auto; */
 }
 
-@media (max-width:768px)
-{
-    .vignettes img
-    {
-        max-width: 800px;
-    }
-}
 
 article .vignettes_infos
 {
     border-radius: 0 0 20px 20px;
     height: 77px; 
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-top: 8px;
 }
 
@@ -641,20 +438,20 @@ article .vignettes_infos
 {
     font-size: 16px; 
     margin: 0;
-    height: 35px; 
+    /* height: 35px;  */
 }
 
 .vignettes p
 {
     font-size: 13px;
-    margin-top: 2px;
-    margin: 0;
+    /* margin-top: 2px; */
+    margin: 10px 0 0 0;
 }
 
 .etoiles
 {
     display: flex;
-    margin-top: 10px; 
+    margin-top: 13px; 
 }
 
 .fa-star
@@ -687,22 +484,6 @@ aside
     flex-direction: column;
 }
 
-@media (max-width:992px)
-{
-    aside
-    {
-        width: 33%; 
-    } 
-}
-
-@media (max-width:768px)
-{
-    aside
-    {
-        width: inherit;
-    }
-}
-
 
 #aside_titre
 {
@@ -727,13 +508,6 @@ aside .vignettes
     height: 145px;  
 }
 
-@media (max-width:992px)
-{
-    aside .vignettes
-    {
-        height: 210px;
-    }    
-}
 
 aside a
 {
@@ -741,23 +515,8 @@ aside a
     display: flex;   
     flex-direction: row;
     justify-content: space-between; 
+    height: 100%;
     border-radius: 20px;
-}
-
-@media (max-width:992px)
-{   
-    aside a
-    {
-        flex-direction: column; 
-    }
-}
-
-@media (max-width:768px)
-{
-    aside a
-    {
-        flex-direction: row;
-    }
 }
 
 aside .vignettes_image
@@ -768,28 +527,6 @@ aside .vignettes_image
     margin: 5px 0px 5px 5px;   
 }
 
-@media (max-width:992px)
-{
-    aside .vignettes_image
-    {
-        width: inherit; 
-        border-radius: 20px 20px 0 0;
-        margin: 5px 5px 0 5px;
-        height: 115px; 
-    }
-}
-
-@media (max-width:768px)
-{
-    aside .vignettes_image
-    {
-        width: 35%;
-        height: 200px;
-        margin: 5px 0 5px 5px;
-        border-radius: 20px 0 0 20px;
-    }
-}
-
 aside .vignettes_infos
 {
     width: 65%;
@@ -798,72 +535,30 @@ aside .vignettes_infos
     position: relative;
 }
 
-@media (max-width:992px)
-{
-    aside .vignettes_infos
-    {
-    border-radius: 0 0 20px 20px; 
-    height: 77px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    width: inherit;
-    }
-}
-
-@media (max-width:768px)
-{
-    aside .vignettes_infos
-    {
-        width: 65%;
-        border-radius: 0 20px 20px 0;
-        padding: 17px;
-        height: inherit;
-    }
-}
-
 aside .etoiles
 {
     position: absolute;
     bottom: 15px;
 }
 
-@media (max-width:992px)
-{
-    aside .etoiles
-    {
-        position: inherit;
-        bottom: inherit;
-    }   
-}
-
-@media (max-width:768px)
-{
-    aside .etoiles
-    {
-        position: absolute;
-        bottom: 15px;
-    }
-}
 
 
 /* style activités */
 
 
-#section_activites img
+/* #section_activites img
 {
     max-width: 700px; 
     height: auto; 
-}
+} */
 
-@media (max-width:768px)
+/* @media (max-width:768px)
 {
     #section_activites img
     {
         max-width: 1200px;
     }
-}
+} */
 
 #section_activites h3
 {
@@ -883,13 +578,6 @@ aside .etoiles
     justify-content: space-between;
 }
 
-@media (max-width:992px)
-{   
-    #activites
-    {
-        flex-wrap: wrap;
-    }
-}
 
 .vignette_decoupage
 {
@@ -897,51 +585,6 @@ aside .etoiles
     flex-direction: column;
     width: 22.5%;
     border-radius: 20px;
-}
-
-@media (max-width:992px)
-{   
-    .partie_haute
-    {
-        width: 30%; 
-    }
-
-    .partie_basse
-    {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    .partie_basse .vignettes_activites 
-    {
-        width: 47%;
-    }
-}
-
-@media (max-width:768px)
-{
-    .partie_basse
-    {
-        flex-direction: column;
-        margin-top: inherit;
-    }
-
-    .vignette_decoupage
-    {
-        width: 100%;
-    }
-
-    .partie_basse .vignettes_activites
-    {
-        width: 100%;
-    }
-
-    .partie_haute
-    {
-        margin-bottom: 40px;
-    }
 }
 
 .bas
@@ -989,47 +632,10 @@ aside .etoiles
     height: 100px;
 }
 
-@media (max-width:992px)
-{
-    
-    .grande .activites_images
-    {
-        height: 300px;
-    }
-
-    .pomegues
-    {
-        height: 100px;
-    }
-
-    .frioul
-    {
-        height: 100px;
-    }
-
-    .partie_haute .bas
-    {
-        margin-top: 40px;
-    }
-}
 
 .garde, .longchamps
 {
     height: 145px;
-}
-
-@media (max-width:768px)
-{
-    .grande .activites_images, .pomegues, .frioul, .garde, .longchamps
-    {
-        height: 150px;
-    }
-
-    .mobile
-    {
-        margin-top: 40px;
-    }
-
 }
 
 .activites_titres
@@ -1045,6 +651,7 @@ aside .etoiles
 }
 
 
+
 /* style footer */
 
 
@@ -1056,13 +663,6 @@ footer
     padding: 35px 0 20px 30px;
 }
 
-@media (max-width:768px)
-{
-    footer 
-    {
-        flex-direction: column;
-    }
-}
 
 footer h2
 {
@@ -1073,14 +673,6 @@ footer h2
 {
     width: 30%;
     margin-right: 10%;
-}
-@media (max-width:768px)
-{
-    .footer_section
-    {
-        width: inherit;
-        margin-right: inherit;
-    }
 }
 
 .footer_section ul
@@ -1101,3 +693,391 @@ footer h2
     text-decoration: underline;
 }
 
+
+@media all and (max-width:992px)
+{
+    header nav
+    {
+        width: 50%; 
+    }
+    
+    .formulaire
+    {
+        margin-bottom: 8px;
+    }
+    
+    #filtre
+    {
+        flex-direction: column;
+        align-items: inherit; 
+    }
+    
+    #filtres_liste
+    {
+        padding-left: inherit;
+        justify-content: space-between; 
+        width: 100%;
+    }
+
+    .partie
+    {
+        padding: 10px;
+    }
+    
+    article
+    {
+        width: 55%;
+    }
+    
+    article .vignettes
+    {
+        width: 49.5%;
+    }
+    
+    aside
+    {
+        width: 39%; 
+    }
+    
+    aside .vignettes
+    {
+        height: 210px;
+    }
+    
+    aside a
+    {
+        flex-direction: column; 
+    }
+    
+    aside .vignettes_image
+    {
+        width: inherit;
+        height: 115px;  
+        border-radius: 20px 20px 0 0;
+        margin: 5px 5px 0px 5px;
+         
+    }
+    
+    aside .vignettes_infos
+    {
+    border-radius: 0 0 20px 20px; 
+    height: 65px;  
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 8px;
+    /* padding-bottom: 0; */
+    width: inherit;
+    /* position: initial; */
+    }
+    
+    aside .etoiles
+    {
+        position: inherit;
+        bottom: inherit;
+    }
+    
+    #activites
+    {
+        flex-wrap: wrap;
+    }
+    
+    .partie_haute
+    {
+        width: 30%; 
+    }
+
+    .partie_basse
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .partie_basse .vignettes_activites 
+    {
+        width: 47%;
+    }
+    
+    .grande .activites_images
+    {
+        height: 300px;
+    }
+
+    .pomegues
+    {
+        height: 100px;
+    }
+
+    .frioul
+    {
+        height: 100px;
+    }
+
+    .partie_haute .bas
+    {
+        margin-top: 40px;
+    }       
+}
+
+@media all and (max-width:768px)
+{
+    header
+    {
+        flex-direction: column;
+        margin: inherit;
+    }
+    
+    #logo
+    {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+    
+    #logo img 
+    {
+        width: 110px;
+    }
+    
+    header nav
+    {
+        width: inherit;
+    }
+    
+    header ul
+    {
+        justify-content: inherit;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .nav_actif
+    {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    
+    .nav_inactif
+    {
+        border-bottom: 2px solid #Dcdcdc;
+    }
+    
+    .nav_liens
+    {
+        padding-top: inherit;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 12px;
+        margin-top: 10px;
+    }
+    
+    .formulaire
+    {
+        margin-bottom: inherit;
+        height: 50px;
+        /* -justifycontent: ; */
+    }
+    
+    #bouton
+    {
+        width: 60px;
+        border-radius: 15px;
+    }
+    
+    .fa-search
+    {
+        display: inherit;
+    }
+
+    #champs
+    {
+        width: 170px;
+    }
+
+    #rechercher
+    {
+        display: none;
+    }
+    
+    #filtres_liste
+    {
+        flex-wrap: wrap;
+    }
+    
+    .listes
+    {
+        margin-bottom: 15px;
+        margin-right: 6px;
+    }
+
+    main
+    {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 16px; */
+        /* margin-right: 0;
+        margin-left: 0;  */
+        /* padding-right: 20px;
+        padding-left: 20px; 
+        margin-right: 0;
+        margin-left: 0; */
+    }
+    
+    #section_principale
+    {
+        flex-direction: column;
+        align-items: center;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+    }
+    
+    .partie:nth-child(2)
+    {
+        border-radius: 0; 
+    }
+
+    .partie:nth-child(1)
+    {
+        background: inherit;
+    }
+
+    /* .partie
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    } */
+
+    article
+    {
+        width: inherit;
+        order: 2;
+        /* padding-left: 20px;
+        padding-right: 20px;  */
+    }
+    
+    .hebergements
+    {
+        flex-wrap: inherit;
+        flex-direction: column;
+        justify-content: inherit;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        /* padding-left: 20px;
+        padding-right: 20px; */
+    }
+    
+    article .vignettes
+    {
+        width: 100%; 
+        height: 240px;
+    }
+
+    article .vignettes_image
+    {
+        height: 145px;
+        /* margin: 5px 5px 0px 5px; 
+        border-radius: 20px 20px 0px 0px; */
+    }
+
+    article .vignettes_infos
+    {
+        /* border-radius: 0 0 20px 20px; */
+        /* height: 87px;  */
+        /* padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px; */
+    }
+    
+    /* article .vignettes
+{
+    width: 32.5%; 
+    
+    display: flex;
+    flex-direction: column; */
+
+    
+    .vignettes img
+    {
+        max-width: 800px;
+    } 
+    
+    aside
+    {
+        width: inherit;
+    }
+    
+    aside a
+    {
+        flex-direction: row;
+    }
+
+    aside .vignettes
+    {
+        height: 150px;   
+    }
+    
+    aside .vignettes_image
+    {
+        width: 40%;
+        height: 140px;
+        margin: 5px 0 5px 5px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    aside .vignettes_infos
+    {
+        width: 60%;
+        border-radius: 0 20px 20px 0;
+        padding: 17px;
+        height: inherit;
+    }
+    
+    aside .etoiles
+    {
+        position: absolute;
+        bottom: 50px;
+    }
+    
+    .partie_basse
+    {
+        flex-direction: column;
+        margin-top: inherit;
+    }
+
+    .vignette_decoupage
+    {
+        width: 100%;
+    }
+
+    .partie_basse .vignettes_activites
+    {
+        width: 100%;
+    }
+
+    .partie_haute
+    {
+        margin-bottom: 40px;
+    }
+    
+    .grande .activites_images, .pomegues, .frioul, .garde, .longchamps
+    {
+        height: 150px;
+    }
+
+    .mobile
+    {
+        margin-top: 40px;
+    }
+    
+    footer 
+    {
+        flex-direction: column;
+    }
+    
+    .footer_section
+    {
+        width: inherit;
+        margin-right: inherit;
+    }    
+}
