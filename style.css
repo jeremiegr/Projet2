@@ -358,7 +358,7 @@ main
 
 article
 {
-    width: 62%;
+    width: 61%;
 }
 
 
@@ -432,12 +432,14 @@ article .vignettes_infos
     padding-left: 15px;
     padding-right: 10px;
     padding-top: 8px;
+    position: relative;
 }
 
 .vignettes h3
 {
     font-size: 16px; 
     margin: 0;
+    line-height: 17px;
     /* height: 35px;  */
 }
 
@@ -446,12 +448,16 @@ article .vignettes_infos
     font-size: 13px;
     /* margin-top: 2px; */
     margin: 10px 0 0 0;
+    position: absolute;
+    bottom: 30px;
 }
 
 .etoiles
 {
     display: flex;
-    margin-top: 13px; 
+    margin-top: 13px;
+    position: absolute;
+    bottom: 4px; 
 }
 
 .fa-star
@@ -479,7 +485,7 @@ article .vignettes_infos
 
 aside
 {
-    width: 29%;
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
@@ -533,6 +539,12 @@ aside .vignettes_infos
     border-radius: 0 20px 20px 0;
     padding: 17px;
     position: relative;
+}
+
+aside .vignettes p
+{
+    /* position: absolute; */
+    bottom: 75px;
 }
 
 aside .etoiles
@@ -762,18 +774,24 @@ footer h2
     {
     border-radius: 0 0 20px 20px; 
     height: 65px;  
-    padding-left: 10px;
-    padding-right: 5px;
+    /* padding-left: 10px;
+    padding-right: 5px; */
     padding-top: 8px;
     /* padding-bottom: 0; */
     width: inherit;
     /* position: initial; */
     }
+
+    aside .vignettes p
+    {
+        bottom: 35px;
+    }
     
     aside .etoiles
     {
-        position: inherit;
-        bottom: inherit;
+        /* position: inherit; */
+        /* bottom: inherit; */
+        bottom: 9px;
     }
     
     #activites
@@ -966,6 +984,15 @@ footer h2
         /* padding-left: 20px;
         padding-right: 20px; */
     }
+
+    .vignettes h3
+    {
+        font-size: 18px;
+        line-height: 19px; 
+        /* margin: 0;
+         */
+        /* height: 35px;  */
+    }
     
     article .vignettes
     {
@@ -1032,11 +1059,16 @@ footer h2
         padding: 17px;
         height: inherit;
     }
+
+    aside .vignettes p
+    {
+        bottom: 110px;
+    }
     
     aside .etoiles
     {
-        position: absolute;
-        bottom: 50px;
+        /* position: absolute; */
+        bottom: 47px;
     }
     
     .partie_basse
