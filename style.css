@@ -179,7 +179,7 @@ header ul
     font-size: 17px; 
 }
 
-#bouton
+#bouton, #bouton_2
 {
     width: 120px; 
     font-weight: bold;
@@ -192,7 +192,7 @@ header ul
 
 
 
-.fa-search
+#bouton_2
 {
     display: none;
 }
@@ -896,16 +896,24 @@ footer h2
         /* -justifycontent: ; */
     }
     
-    #bouton
+    #bouton_2
     {
         width: 60px;
         border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bouton
+    {
+        display: none;
     }
     
-    .fa-search
+    /* .fa-search
     {
-        display: inherit;
-    }
+        
+    } */
 
     #champs
     {
