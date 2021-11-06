@@ -248,7 +248,7 @@ header ul {
 
 #infos {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .fa-info {
@@ -277,7 +277,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -294,7 +294,7 @@ main {
 .partie {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
 }
@@ -304,7 +304,8 @@ main {
 }
 
 article {
-    width: 61%;
+    width: 60%;
+    margin-right: 15px;
 }
 
 
@@ -323,7 +324,7 @@ article {
 }
 
 article .vignettes {
-    width: 32.5%; 
+    width: 31%; 
     height: 210px;
     display: flex;
     flex-direction: column;
@@ -405,7 +406,7 @@ article .vignettes_infos {
 
 
 aside {
-    width: 30%;
+    width: 28%;
     display: flex;
     flex-direction: column;
 }
@@ -454,7 +455,7 @@ aside .vignettes_infos {
 }
 
 aside .vignettes p {
-    bottom: 75px;
+    bottom: 65px;
 }
 
 aside .etoiles {
@@ -582,6 +583,11 @@ footer h2 {
     header nav {
         width: 50%; 
     }
+
+    main {
+        /* margin-left: 0;
+        margin-right: 0; */
+    }
     
     .formulaire {
         margin-bottom: 8px;
@@ -604,10 +610,12 @@ footer h2 {
     
     article {
         width: 55%;
+        margin-right: 0;
+        
     }
     
     article .vignettes {
-        width: 49.5%;
+        width: 48%;
     }
     
     aside {
@@ -756,9 +764,16 @@ footer h2 {
         margin-right: 6px;
     }
 
+    main {
+        /* margin-left: 0;
+        margin-right: 0; */
+    }
+
     #section_principale {
         flex-direction: column;
         align-items: center;
+        /* padding-left: 20px;
+        padding-right: 20px;  */
     }
     
     .partie:nth-child(2)
