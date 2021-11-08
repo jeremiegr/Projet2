@@ -97,18 +97,12 @@ header ul {
     margin-left: 20px;    
 }
 
-#recherche_intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
-}
-
-#recherche_intro h1 {
+#recherche h1 {
     padding-bottom: 0px;
     margin-bottom: 8px;
 }
 
-#recherche_intro p {
+#recherche p {
     padding-top: 0px;
     margin-top: 0px;
     padding-bottom: 0px;
@@ -184,7 +178,6 @@ header ul {
     font-size: 17px;   
 }
 
-
 #filtre h2 {
     margin-left: 8px;
     font-size: 18px;
@@ -197,7 +190,6 @@ header ul {
     justify-content: space-around;
     padding-left: 20px;
 }
-
 
 .lien_filtre {
     display: flex; 
@@ -226,8 +218,7 @@ header ul {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background-color: #DEEBFF;
-    
+    background-color: #DEEBFF;  
 }
 
 .lien_filtre:hover .filtres_icones {
@@ -290,6 +281,7 @@ main {
 
 
 /* style article */
+
 
 .partie {
     background-color: #F2F2F2;
@@ -354,6 +346,19 @@ img {
     width: 100%;
     height: 100%; 
     object-fit: cover;
+    
+}
+
+#activites .grande img {   
+    object-position: 50% 40%;
+}
+
+#activites .partie_basse img {   
+    object-position: 50% 22%;
+}
+
+#activites .frioul img {   
+    object-position: 50% 35%;
 }
 
 article .vignettes_infos {
@@ -411,7 +416,6 @@ aside {
     flex-direction: column;
 }
 
-
 #aside_titre {
     display: flex;
     justify-content: space-between;
@@ -430,7 +434,6 @@ aside {
 aside .vignettes {
     height: 145px;  
 }
-
 
 aside a {
     display: flex;   
@@ -468,6 +471,7 @@ aside .etoiles {
 /* style activités */
 
 
+
 #section_activites h3 {
     font-size: 16px;
 }
@@ -482,7 +486,6 @@ aside .etoiles {
     display: flex;
     justify-content: space-between;
 }
-
 
 .vignette_decoupage {
     display: flex;
@@ -584,11 +587,6 @@ footer h2 {
         width: 50%; 
     }
 
-    main {
-        /* margin-left: 0;
-        margin-right: 0; */
-    }
-    
     .formulaire {
         margin-bottom: 8px;
     }
@@ -638,10 +636,10 @@ footer h2 {
     }
     
     aside .vignettes_infos {
-    border-radius: 0 0 20px 20px; 
-    height: 65px;  
-    padding-top: 8px;
-    width: inherit;
+        border-radius: 0 0 20px 20px; 
+        height: 65px;  
+        padding-top: 8px;
+        width: inherit;
     }
 
     aside .vignettes p {
@@ -764,16 +762,9 @@ footer h2 {
         margin-right: 6px;
     }
 
-    main {
-        /* margin-left: 0;
-        margin-right: 0; */
-    }
-
     #section_principale {
         flex-direction: column;
         align-items: center;
-        /* padding-left: 20px;
-        padding-right: 20px;  */
     }
     
     .partie:nth-child(2)
